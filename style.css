@@ -1,0 +1,135 @@
+body{
+    background-color : rgb(245, 245, 245);
+    padding-top : 10px;
+    font-family: 'Slabo 27px', serif;
+}
+
+
+.content, .nav{
+    width: 70vw;
+    margin : auto;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-template-rows: auto;
+    grid-gap : 50px;
+    margin-bottom: 50px;
+}
+
+.nav{
+    font-size: 1.3em;
+    text-align: right;
+}
+
+.nav a{
+    display: inline-block;
+    margin-left : 20px;
+}
+
+.left_panel_first{
+    margin-bottom : 20px;
+}
+
+.right_panel span{
+    color : black;
+    background-color: none;
+    border : 0.8px solid black;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left : 5px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.right_panel p{
+    margin-bottom : 0px;
+    margin-top : 7px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.social_item{
+    width: 100%;
+}
+.social_item i{
+    width: 1em;
+    margin-right: 5%;
+}
+
+.left_panel, .nav_empty{
+    margin-top : 20px;
+    background-color: none;
+}
+
+.right_panel, .nav_content{
+    background-color: none;
+}
+
+.left_panel h1{
+    font-size: 1.4em;
+    margin-top : 0;
+    margin-bottom: 10px;
+}
+.left_panel h2{
+    font-size: 1.2em;
+    margin-top : 0;
+    margin-bottom: 0;
+}
+
+.left_panel h3{
+    font-size: 1.0em;
+    font-style: italic;
+    margin-top : 0;
+    margin-bottom: 0;
+}
+
+.right_panel h1{
+    margin-top : 20px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .content, .nav{
+        width : 840px;
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .content, .nav{
+        width : 86vw;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .left_panel{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+    .nav{
+        text-align: center;
+    }
+
+    .left_panel_first{
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 0.5px solid black;
+    }
+    .left_panel_second{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}

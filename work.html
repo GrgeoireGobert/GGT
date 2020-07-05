@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Gregoire Gobert | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ff57f24d1c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="nav">
+    <div class="nav_empty"></div>
+    <div class="nav_content">
+        <a href="index.html">ABOUT</a>
+        <a href="cv.html">CV</a>
+        <a href="work.html">WORK</a>
+        <a href="ressources.html">RESSOURCES</a>
+    </div>
+</div>
+
+<div class="content">
+
+    <div class="left_panel">
+        <div class="left_panel_first">
+            <img src="photo.png" width="100%">
+        </div>
+        <div class="left_panel_second">
+            <h1>Grégoire Gobert</h1>
+            <h2>R&D Engineer</h2>
+            <h3>Computer Graphics - Rigging</h3>
+            <br/>
+            <div class="social_item">
+                <i class="far fa-envelope"></i><a href="mailto:gobgreg@gmail.com">E-Mail</a><br/>
+            </div>
+            <div class="social_item">
+                <i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/greg-gobert/">LinkedIn</a><br/>
+            </div>
+            <div class="social_item">
+                <i class="fab fa-twitter"></i><a href="https://twitter.com/gobert_gregoire">Twitter</a><br/>
+            </div>
+            <div class="social_item">
+                <i class="fab fa-facebook-f"></i><a href="https://www.facebook.com/profile.php?id=100018195132831">Facebook</a><br/>
+            </div>
+            <div class="social_item">
+                <i class="fab fa-github"></i><a href="https://github.com/GrgeoireGobert/">Github</a><br/>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="right_panel">
+        <h1>My work</h1>
+
+        <p><span>2020</span> <b>Mikros Animation</b> - Cage Deformer<br/>
+        I implemented a cage-based Maya deformer. This deformer allows the use of different state of the art coordinate systems on different 
+        parts of the same mesh : Green Coordinates, Mean Value Coordinates, Harmonic Coordinates and Maximum Entropy Coordinates. 
+        The plugin is paralellized and allows real-time deformation on basic configurations.<br/>
+        Work based on the following publications :
+        <ul>
+            <li>Mean Value Coordinates for Closed Triangular Meshes [Ju et al., 2005] :
+                <a target="_blank" rel="noopener noreferrer" href="https://www.cse.wustl.edu/~taoju/research/meanvalue.pdf"><em>PDF</em></a>
+            </li>
+            <li>Mean value coordinates for quad cages in 3D [Thiery et al., 2018] : 
+                <a target="_blank" rel="noopener noreferrer" href="https://perso.telecom-paristech.fr/boubek/papers/QMVC/QMVC_lowres.pdf"><em>PDF</em></a>
+            </li>
+            <li>Harmonic Coordinates for Character Articulation [Joshi et al., 2007] : 
+                <a target="_blank" rel="noopener noreferrer" href="https://graphics.pixar.com/library/HarmonicCoordinatesB/paper.pdf"><em>PDF</em></a>
+            </li>
+            <li>Maximum Entropy Coordinates for Arbitrary Polytopes [Hormann et al., 2008] : 
+                <a target="_blank" rel="noopener noreferrer" href="http://dilbert.engr.ucdavis.edu/~suku/maxent/papers/mec-sgp2008.pdf"><em>PDF</em></a>
+            </li>
+            <li>Green Coordinates [Lipman et al., 2008] : 
+                <a target="_blank" rel="noopener noreferrer" href="http://www.wisdom.weizmann.ac.il/~ylipman/GC/gc_techrep.pdf"><em>PDF</em></a>
+            </li>
+            <li>*Cages: A multi-level, multi-cage based system for mesh deformation [Gonzalez Garcia et al., 2013] : 
+                <a target="_blank" rel="noopener noreferrer" href="http://ggg.udg.edu/publicacions/UsersWebs/starCages/starCagesTOGPreprint.pdf"><em>PDF</em></a>
+            </li>
+
+        </ul>
+        </p>
+
+        <p><span>2020</span> <b>Mikros Animation</b> - Slide Deformer<br/>
+        I implemented a mesh sliding Maya deformer. This deformer requires the computation of geodesic distance on a mesh 
+        and preserves the orignal shape of the mesh while sliding (no volume loss/creation). In addition tp this, I Implemented 
+        my own technique to easily design mesh wrinkles onto this sliding. The plugin is paralellized and allows real-time deformation
+        on basic configurations.<br/>
+        Work based on the following publications :
+        <ul>
+            <li>Sliding Deformation: Shape Preserving Per-Vertex Displacement [Pinskiy, 2010] :
+                <a target="_blank" rel="noopener noreferrer" href="https://disney-animation.s3.amazonaws.com/uploads/production/publication_asset/25/asset/shapePreservingVertexDisplacement.pdf"><em>PDF</em></a>
+            </li>
+            <li>The Heat Method for Distance Computation [Crane et al., 2017] : 
+                <a target="_blank" rel="noopener noreferrer" href="https://www.cs.cmu.edu/~kmcrane/Projects/HeatMethod/paper.pdf"><em>PDF</em></a>
+            </li>
+        </ul>
+        </p>
+
+    </div>
+
+
+</div>
+    
+</body>
+</html>
